@@ -4,6 +4,9 @@ html
     meta(charset="utf-8")
     title harusamex.com
 
+    meta(name="viewport" content="initial-scale=1.0")
+    meta(name="theme-color" content="#cccccc")
+
     link(rel="stylesheet" href="styles/main.css")
 
   body
@@ -13,16 +16,16 @@ html
       h2 Who am I
       p spring-raining(はるさめ)
       p
-        |　I live in Hyogo, Japan. I'm student at Osaka University.
+        | I live in Hyogo, Japan. I'm student at Osaka University.
         br
         | I like technologies pioneer the web.
-      p
-        a(href="https://github.com/spring-raining") GitHub
-        a(href="https://twitter.com/spring_raining") Twitter
-        a(href="http://spring-raining.tumblr.com/") Tumblr
-        a(href="http://spring-raining.hatenablog.com/") Blog
-        a(href="https://speakerdeck.com/spring_raining") Speaker Deck
-        a(href="http://www.amazon.co.jp/registry/wishlist/2QFXRULZWJ5P") Amazon(Wish List)
+      p.flex
+        span: a(href="https://github.com/spring-raining") GitHub
+        span: a(href="https://twitter.com/spring_raining") Twitter
+        span: a(href="http://spring-raining.tumblr.com/") Tumblr
+        span: a(href="http://spring-raining.hatenablog.com/") Blog
+        span: a(href="https://speakerdeck.com/spring_raining") Speaker Deck
+        span: a(href="http://www.amazon.co.jp/registry/wishlist/2QFXRULZWJ5P") Amazon(Wish List)
 
       h2 Work Experience
       ul
@@ -30,18 +33,18 @@ html
         li August 2014 - September 2014 Internship at Hatena Co., Ltd.
         li September 2012 - June 2013 Part-Time Programmer at CubeSoft, Inc.
 
-      h2 Works
+      h2 Products
       .works-collapse
-        h4 Giraf
+        h4: a(href="https://spring-raining.github.io/Giraf") Giraf
         div Web-Based GIF animation creator
       .works-collapse
-        h4 SSRサインジェネレータ
+        h4: a(href="http://ssrgen.harusamex.com/") SSRサインジェネレータ
         div
           | Autograph drawing tool (Parody of the game, which called
           cite The Idolmaster Cinderella Girls Starlight Stage
           |)
       .works-collapse
-        h4 Shiki
+        h4: a(href="http://shikitheme.tumblr.com/") Shiki
         div Parallax scrolling Tumblr theme
 
       h2 Contact

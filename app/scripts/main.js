@@ -32,7 +32,7 @@ function init() {
 
   const particles = new THREE.Points(segments, new THREE.PointsMaterial({
     color: 0xaaaaaa,
-    size: (window.devicePixelRatio || 1) / 2,
+    size: 1, //(window.devicePixelRatio || 1) / 2,
     sizeAttenuation: false,
   }));
 
