@@ -20,7 +20,7 @@ gulp.task('clean', () => del([], {dot: true}));
 gulp.task('html', () =>
   gulp.src('app/**/*.jade')
     .pipe($.jade({
-      pretty: true,
+      pretty: false,
     }))
     .pipe(gulp.dest('dist'))
 );
