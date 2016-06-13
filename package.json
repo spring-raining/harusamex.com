@@ -1,7 +1,8 @@
 {
   "name": "harusamex.com",
   "scripts": {
-    "install": "gulp"
+    "install": "gulp",
+    "test": "echo \"Everything is in good order:)\" && exit 0"
   },
   "private": true,
   "author": "spring-rainig",

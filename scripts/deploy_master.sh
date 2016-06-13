@@ -2,4 +2,5 @@
 
 set -ex
 
-scp -r -P ${SCP_PORT} dist/ ${SCP_USER}@harusamex.com:${SCP_PATH}
+rsync -avz --delete -e "ssh -p ${SSH_PORT}" dist/ ${SSH_USER}@harusamex.com:/var/www/homepage/
+
