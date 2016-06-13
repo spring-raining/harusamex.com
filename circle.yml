@@ -1,0 +1,8 @@
+machine:
+  node:
+    version: 5.11.1
+deployment:
+  master:
+    branch: master
+    commands:
+      - sh scripts/deploy_master.sh
