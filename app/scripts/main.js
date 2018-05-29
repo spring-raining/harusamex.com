@@ -1,7 +1,5 @@
 'use strict';
 
-import THREE from 'three';
-
 let scene, camera, renderer;
 let globe;
 let lastTime;
@@ -73,4 +71,3 @@ function getTime() {
     ? window.performance.now()
     : new Date().getTime();
 }
-

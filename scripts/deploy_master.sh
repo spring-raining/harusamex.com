@@ -2,5 +2,5 @@
 
 set -ex
 
-rsync -avz --delete -e "ssh -p ${SSH_PORT}" dist/ ${SSH_USER}@harusamex.com:/var/www/homepage/
+rsync -avz --delete -e "ssh -p ${SSH_PORT} -o StrictHostKeyChecking=no" dist/ ${SSH_USER}@harusamex.com:/var/www/homepage/
 

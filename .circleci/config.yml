@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  deploy:
+    working_directory: ~/harusamex.com
+    docker:
+      - image: circleci/node:10
+    steps:
+      - run: sudo apt install -y rsync
+      - checkout
+      - run: npm install
+      - run: npm run build
+      - run: sh scripts/deploy_master.sh
+
+workflows:
+  version: 2
+  deploy_on_master:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
